@@ -1,0 +1,55 @@
+.week {
+    margin-top: 20px;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 132px 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr;
+    grid-template-columns: 132px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 1px solid#eef2f5;
+    grid-gap: 0px;
+
+    &__week {
+        background-color: #f5f6fa;
+        text-align: center;
+        padding-top: 24px;
+        padding-bottom: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #c2c4cf;
+    }
+
+    &__monthName {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        margin: 0;
+        font-weight: 500;
+        margin-top: 11px;
+        letter-spacing: 1px;
+        margin-right: 284px;
+    }
+
+    &__weekEmpty {
+        background-color: #f5f6fa;
+    }
+
+    &__tableData {
+        font-size: 20px;
+        padding: 17px;
+        font-size: 18px;
+        padding-top: 19px;
+        padding-bottom: 29px;
+        border-right: 1px solid#eef2f5;
+        border-top: 1px solid#eef2f5;
+        text-align: center;
+    }
+
+
+    &__highlight {
+        background-color: #f5f6fa;
+    }
+
+    &__noPadding {
+        padding: 0;
+    }
+}

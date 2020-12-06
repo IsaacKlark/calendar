@@ -1,0 +1,94 @@
+.calendar {
+    margin-left: 395px;
+    padding-left: 115px;
+    padding-right: 115px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: calc(100% - 395px);
+    max-width: 2018px;
+    padding-bottom: 111px;
+
+    &__header {
+        font-size: 38px;
+        margin-top: 53px;
+        margin-bottom: 53px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #484763;
+    }
+
+    &__mainWrapper {
+        background-color: white;
+        width: 100%;
+        padding-top: 27px;
+        padding-left: 28px;
+        padding-right: 34px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding-bottom: 42px;
+        overflow: scroll;
+    }
+
+    &__mainWrapperHeaderWrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+    }
+
+    &__mainWrapperHeader {
+        color: #484763;
+        font-size: 26px;
+        font-weight: 500;
+        margin: 0;
+        padding-bottom: 22px;
+        white-space: nowrap;
+    }
+
+    &__linksList {
+        list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+        margin-bottom: 10px;
+        border: 2px solid #bdbdcc;
+        border-radius: 5px;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 0;
+            border-right: 2px solid #bdbdcc;
+            padding: 8px 24px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #484763;
+        font-size: 19px;
+        background-color: white;
+        border: none;
+        outline: none;
+    }
+
+    &__linksList li:last-child {
+        border-right: none;
+    }
+
+    &__activeLink {
+        color: #8db9ff;
+    }
+
+    &__bottomHeaderWrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+    }
+}

@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header';
+import Aside from './components/Aside/Aside';
+import { HashRouter, Route, Redirect } from 'react-router-dom';
+import Calendar from './components/Calendar/Calendar';
+import Month from './components/Month/Month';
+import Week from './components/Week/Week';
+import Day from './components/Day/Day';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Header />
+      <Aside />
+      <Route path="/" exact>
+        <Redirect to="/calendar/month" />
+      </Route>
+      <Route path="/calendar" exact>
+        <Redirect to="/calendar/month" />
+      </Route>
+      <Route path="/calendar/month">
+        <Calendar>
+          <Month />
+        </Calendar>
+      </Route>
+      <Route path="/calendar/week">
+        <Calendar>
+          <Week />
+        </Calendar>
+      </Route>
+      <Route path="/calendar/day">
+        <Calendar>
+          <Day />
+        </Calendar>
+      </Route>
+    </HashRouter>
   );
 }
 

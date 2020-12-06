@@ -1,0 +1,134 @@
+.form {
+    position: absolute;
+    width: 127%;
+    bottom: -357px;
+    border: 4px solid #c1c1c9;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    z-index: 2;
+    background-color: white;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -ms-grid;
+    display: grid;
+    min-width: 216px;
+
+    &__closeWrapper {
+        width: 100%;
+        padding-top: 4px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }  
+
+    &__closeButton {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        z-index: 3;
+        margin-right: 3px;
+
+        img {
+            width: 29px;
+        }
+    }
+
+    &__closeButton:hover {
+        cursor: pointer;
+    }
+
+    &__inputWrapper {
+        width: 87%;
+        border-bottom: 1px solid #dadada;
+        position: relative;
+        top: -15px;
+        padding-bottom: 26px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    &__input {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    &__input::-webkit-input-placeholder {
+        color: #dadada;
+    }
+
+    &__input::-moz-placeholder {
+        color: #dadada;
+    }
+
+    &__input:-ms-input-placeholder {
+        color: #dadada;
+    }
+
+    &__input::-ms-input-placeholder {
+        color: #dadada;
+    }
+
+    &__input::placeholder {
+        color: #dadada;
+    }
+
+    &__image {
+        width: 40px;
+        position: relative;
+        top: 8px;
+        right: 5px;
+    }
+
+    &__otherInputsWrapper {
+        margin-top: 37px;
+    }
+
+    &__lastButtonsWrapper {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    &__save, &__cancel {
+        margin-right: 25px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #ccccdb;
+        margin-top: 13px;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    &__cancel {
+        color: #ffa5a5;
+    }
+
+    &__cancel:hover, &__save:hover {
+        cursor: pointer;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: -18px;
+        -ms-grid-column-align: center;
+            justify-self: center;
+        width: 40px;
+    }
+}

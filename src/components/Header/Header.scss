@@ -1,0 +1,113 @@
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 395px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 97px;
+    padding-left: 22px;
+    background-color: white;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: calc(100% - 395px);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 2039px;
+    padding-right: 23px;
+    z-index: 2;
+
+
+    &__emitter {
+        position: absolute;
+        background-color: white;
+        width: calc(100%);
+        height: 97px;
+        top: 0;
+        z-index: -1;
+    }
+
+    &__serachInput {
+        height: 100%;
+        border: 0;
+        outline: 0;
+        height: 100%;
+        font-size: 19px;
+        width: 400px;
+        padding-left: 5px;
+    }
+
+    &__serachInput::-webkit-input-placeholder {
+        color: #b0b1b7;
+    }
+
+    &__serachInput::-moz-placeholder {
+        color: #b0b1b7;
+    }
+
+    &__serachInput:-ms-input-placeholder {
+        color: #b0b1b7;
+    }
+
+    &__serachInput::-ms-input-placeholder {
+        color: #b0b1b7;
+    }
+
+    &__serachInput::placeholder {
+        color: #b0b1b7;
+    }
+
+    &__images {
+        height: 41px;
+    }
+
+    &__helpImage {
+        margin-right: 30px;
+    }
+
+    &__bells {
+        margin-left: 28px;
+    }
+
+    &__select {
+        border-left: 2px solid #b0b1b7;
+        height: 30px;
+        margin-left: 19px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-left: 36px;
+    }
+
+    &__select:hover {
+        cursor: pointer;
+    }
+
+    &__personName {
+        font-size: 18px;
+    }
+
+    &__arrow {
+        margin-left: 21px;
+    }
+
+    &__person {
+        margin-left: 17px;
+        height: 59px;
+    }
+
+    &__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+}
